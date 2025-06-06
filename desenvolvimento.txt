@@ -1,0 +1,14 @@
+
+- implementacao base do programa, sistema de salvamento funcionando.
+porem ainda tem posibilidade de mudanca no metodo de salvamento.
+
+obs: 
+- falta refatorar para usar recursividade e cumprir com a proposta solicitada.
+- pensar em deixar tudo mais generico para diversos usos personalizados pelo usuario.
+
+- clean code: tudo foi implementado em um arquivo so por hora, tambem sera reorganizado para manter 
+os padroes de desenvolvimento.
+
+
+
+
