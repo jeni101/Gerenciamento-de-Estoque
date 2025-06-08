@@ -1,0 +1,12 @@
+Versions:
+    -0.000.01
+        -0.0.0.0.0.0.0.0.001 (Programa Base)
+        -0.0.0.0.0.0.0.0.002 (Organização de Sintax e Criação De Menus)
+        -0.0.0.0.0.0.0.0.003 (Correção de Sintax e Erro na Exibição)
+        -0.0.0.0.0.0.0.0.004 (reorganização da Estrutura do Código)
+        -0.0.0.0.0.0.0.0.004.1 (Linkagem Inicial do Cadastro)
+        -0.0.0.0.0.0.0.0.005 (Mascara Adicionada e Inplementada)
+        -0.0.0.0.0.0.0.0.006 (Implementacao sistema de remocao, incompleto.)
+        -0.0.0.0.0.0.0.0.006.1 (Resolvendo conflitos.)
+    -0.000.02
+        -0.0.0.0.0.0.0.1.001 (Erro Merge Jeni Resolvido)

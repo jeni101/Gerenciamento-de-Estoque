@@ -1,0 +1,26 @@
+Jenny Poucas Ideias:
+    - implementacao base do programa, sistema de salvamento funcionando.
+    porem ainda tem posibilidade de mudanca no metodo de salvamento.
+
+    obs: 
+    - falta refatorar para usar recursividade e cumprir com a proposta solicitada.
+    - pensar em deixar tudo mais generico para diversos usos personalizados pelo usuario.
+
+    - clean code: tudo foi implementado em um arquivo so por hora, tambem sera reorganizado para manter 
+    os padroes de desenvolvimento.
+
+Luisinho Gameplays:
+    - Estou Fazendo as Views, E estruturando a separação dos arquivos, para futuras terminações.
+
+Jenny Poucas Ideias:
+    - atualmente as pilhas estao sendo salvas por numeros, mas pode ser personalizado com categorias dai tiraria as categorias dos
+    produtos e colocaria na pilha 
+
+    - tentar deixar o json mais clean, json de entrada e saida e um de produtos
+
+Luisinho Gameplays:
+    - Solucionar Problemas de Compatibilidade e Erros de Sintax
+    
+    - Implementar Funções Operantes nas Views
+
+    - Implementação da Mascara em todo o Projeto
