@@ -5,4 +5,5 @@ Versions:
         -0.0.0.0.0.0.0.0.003 (Correção de Sintax e Erro na Exibição)
         -0.0.0.0.0.0.0.0.004 (reorganização da Estrutura do Código)
         -0.0.0.0.0.0.0.0.004.1 (Linkagem Inicial do Cadastro)
+        -0.0.0.0.0.0.0.0.005 (Mascara Adicionada e Inplementada)
         

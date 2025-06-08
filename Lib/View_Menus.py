@@ -1,5 +1,6 @@
 from Lib.Limpar_tela import *
 from Lib.Estoque_Cadastro import *
+from Lib.View_Mascara import *
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -20,28 +21,28 @@ def view_menu_estoque():
         try:
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
-            limpar_tela()
-            print("   • Opção Não Válida, Tente Novamente:")
+            Mascara()
+            print("   • Opção Não Válida, Tente Novamente: ")
             continue
 
         match escolha:
             case 1:
-                limpar_tela()
+                Mascara()
                 cadastro_de_produtos()
                 break
             
             case 2:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Remove Itens do Estoque
                 break
             
             case 3:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Visualiza o Estoque
                 break
             
             case 0:
-                limpar_tela()
+                Mascara()
                 return
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -62,23 +63,23 @@ def view_menu_pedidos():
         try:
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
-            limpar_tela()
-            print("   • Opção Não Válida, Tente Novamente:")
+            Mascara()
+            print("   • Opção Não Válida, Tente Novamente: ")
             continue
 
         match escolha:
             case 1:
-                limpar_tela()
+                Mascara()
                 # Linkar Função de Registrar Novo Pedido
                 break
             
             case 2:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Visualiza Pedidos Ativos
                 break
             
             case 0:
-                limpar_tela()
+                Mascara()
                 return
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -100,28 +101,28 @@ def view_menu_registros():
         try:
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
-            limpar_tela()
-            print("   • Opção Não Válida, Tente Novamente:")
+            Mascara()
+            print("   • Opção Não Válida, Tente Novamente: ")
             continue
 
         match escolha:
             case 1:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Visualiza Histórico
                 break
             
             case 2:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Limpa Registros
                 break
             
             case 3:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Limpa Registros Antigos
                 break
             
             case 0:
-                limpar_tela()
+                Mascara()
                 return
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -143,26 +144,26 @@ def view_menu_relatorios():
         try:
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
-            limpar_tela()
-            print("   • Opção Não Válida, Tente Novamente:")
+            Mascara()
+            print("   • Opção Não Válida, Tente Novamente: ")
             continue
 
         match escolha:
             case 1:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Gera Novo Relatório
                 break
             
             case 2:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Visualiza Último Relatório
                 break
             
             case 3:
-                limpar_tela()
+                Mascara()
                 # Linkar Função que Limpa Relatórios Antigos
                 break
             
             case 0:
-                limpar_tela()
+                Mascara()
                 return

@@ -1,8 +1,8 @@
 from Lib.View_Menus import *
-from Lib.Limpar_tela import *
+from Lib.View_Mascara import *
 
 def menu_inicial():
-    limpar_tela()    
+    Mascara()    
     while True:
         print("""
    • Bem Vindo ao Menu Inicial!
@@ -17,32 +17,32 @@ def menu_inicial():
  |- Sair. . . . . . . . . . . . . . . . . . . |  0  |
  |==================================================| 
 """)
-        escolha = input("   • Digite Sua Escolha:")
+        escolha = input("   • Digite Sua Escolha: ")
         
         match escolha:
             case "1":
-                limpar_tela()
+                Mascara()
                 view_menu_estoque()
                 
             case "2":
-                limpar_tela()
+                Mascara()
                 view_menu_pedidos()
                 
             case "3":
-                limpar_tela()
+                Mascara()
                 view_menu_registros()
                 
             case "4":
-                limpar_tela()
+                Mascara()
                 view_menu_relatorios()
                 
             case "0":
-                limpar_tela()
+                Mascara()
                 print("   • Até Mais! ")
                 break
             
             case _:
-                limpar_tela()
+                Mascara()
                 print("   • Opção Não Válida, Tente Novamente:")
                 
 # Executar Menu Inicial
