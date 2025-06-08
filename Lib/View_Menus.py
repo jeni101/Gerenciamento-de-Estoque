@@ -20,7 +20,7 @@ def view_menu_estoque():
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
             limpar_tela()
-            print("   • Digite um número válido.")
+            print("   • Opção Não Válida, Tente Novamente:")
             continue
 
         match escolha:
@@ -28,20 +28,20 @@ def view_menu_estoque():
                 limpar_tela()
                 # Linkar Função de Adicionar Produtos ao Estoque
                 break
+            
             case 2:
                 limpar_tela()
                 # Linkar Função que Remove Itens do Estoque
                 break
+            
             case 3:
                 limpar_tela()
                 # Linkar Função que Visualiza o Estoque
                 break
+            
             case 0:
                 limpar_tela()
                 return
-            case _:
-                limpar_tela()
-                print("   • Opção Não Válida, Tente Novamente:")
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -62,7 +62,7 @@ def view_menu_pedidos():
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
             limpar_tela()
-            print("   • Digite um número válido.")
+            print("   • Opção Não Válida, Tente Novamente:")
             continue
 
         match escolha:
@@ -70,16 +70,15 @@ def view_menu_pedidos():
                 limpar_tela()
                 # Linkar Função de Registrar Novo Pedido
                 break
+            
             case 2:
                 limpar_tela()
                 # Linkar Função que Visualiza Pedidos Ativos
                 break
+            
             case 0:
                 limpar_tela()
                 return
-            case _:
-                limpar_tela()
-                print("   • Opção Não Válida, Tente Novamente:")
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -101,7 +100,7 @@ def view_menu_registros():
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
             limpar_tela()
-            print("   • Digite um número válido.")
+            print("   • Opção Não Válida, Tente Novamente:")
             continue
 
         match escolha:
@@ -109,20 +108,20 @@ def view_menu_registros():
                 limpar_tela()
                 # Linkar Função que Visualiza Histórico
                 break
+            
             case 2:
                 limpar_tela()
                 # Linkar Função que Limpa Registros
                 break
+            
             case 3:
                 limpar_tela()
                 # Linkar Função que Limpa Registros Antigos
                 break
+            
             case 0:
                 limpar_tela()
                 return
-            case _:
-                limpar_tela()
-                print("   • Opção Não Válida, Tente Novamente:")
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -144,7 +143,7 @@ def view_menu_relatorios():
             escolha = int(input("   • Digite Sua Escolha: "))
         except ValueError:
             limpar_tela()
-            print("   • Digite um número válido.")
+            print("   • Opção Não Válida, Tente Novamente:")
             continue
 
         match escolha:
@@ -152,17 +151,17 @@ def view_menu_relatorios():
                 limpar_tela()
                 # Linkar Função que Gera Novo Relatório
                 break
+            
             case 2:
                 limpar_tela()
                 # Linkar Função que Visualiza Último Relatório
                 break
+            
             case 3:
                 limpar_tela()
                 # Linkar Função que Limpa Relatórios Antigos
                 break
+            
             case 0:
                 limpar_tela()
                 return
-            case _:
-                limpar_tela()
-                print("   • Opção Não Válida, Tente Novamente:")

@@ -84,7 +84,6 @@ def salvar_cadastro(engradado): # le oq tem nese arquivo
     print("Produto salvo com sucesso!")
 
 # Executa
-mensagem_inicial()
 
     
     
