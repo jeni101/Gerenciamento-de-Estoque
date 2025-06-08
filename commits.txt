@@ -2,4 +2,6 @@ Versions:
     -0.000.01
         -0.0.0.0.0.0.0.0.001 (Programa Base)
         -0.0.0.0.0.0.0.0.002 (Organização de Sintax e Criação De Menus)
+        -0.0.0.0.0.0.0.0.003 (Correção de Sintax e Erro na Exibição)
+        -0.0.0.0.0.0.0.0.004 (reorganização da Estrutura do Código)
         

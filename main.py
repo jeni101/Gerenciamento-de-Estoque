@@ -1,8 +1,7 @@
-from Lib.cadastro import *
 from Lib.View_Menus import *
 from Lib.Limpar_tela import *
 
-def mensagem_inicial():
+def menu_inicial():
     limpar_tela()    
     while True:
         print("""
@@ -18,17 +17,33 @@ def mensagem_inicial():
  |- Sair. . . . . . . . . . . . . . . . . . . |  0  |
  |==================================================| 
 """)
-        escolha = input(int("   • Digite Sua Escolha:"))
+        escolha = input("   • Digite Sua Escolha:")
+        
         match escolha:
-            case 1:
+            case "1":
+                limpar_tela()
                 view_menu_estoque()
-            case 2:
+                
+            case "2":
+                limpar_tela()
                 view_menu_pedidos()
-            case 3:
+                
+            case "3":
+                limpar_tela()
                 view_menu_registros()
-            case 4:
+                
+            case "4":
+                limpar_tela()
                 view_menu_relatorios()
-            case 0:
+                
+            case "0":
+                limpar_tela()
                 print("   • Até Mais! ")
                 break
-    pass
+            
+            case _:
+                limpar_tela()
+                print("   • Opção Não Válida, Tente Novamente:")
+                
+# Executar Menu Inicial
+menu_inicial()
