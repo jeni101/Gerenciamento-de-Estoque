@@ -1,4 +1,5 @@
 from Lib.Limpar_tela import *
+from Lib.Estoque_Cadastro import *
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -9,7 +10,7 @@ def view_menu_estoque():
  |==================================================|
  | -=-                 ESTOQUE                  -=- |
  |==================================================|
- |- Adicionar Produto ao Estoque  . . . . . . |  1  |
+ |- Cadastrar Produto ao Estoque  . . . . . . |  1  |
  |- Remover Produto do Estoque  . . . . . . . |  2  |
  |- Visualizar Estoque  . . . . . . . . . . . |  3  |
  |____________________________________________|_____|
@@ -26,7 +27,7 @@ def view_menu_estoque():
         match escolha:
             case 1:
                 limpar_tela()
-                # Linkar Função de Adicionar Produtos ao Estoque
+                cadastro_de_produtos()
                 break
             
             case 2:
