@@ -1,4 +1,3 @@
-from Lib.cadastro import *
 from Lib.View_Menus import *
 from Lib.Limpar_tela import *
 
@@ -24,20 +23,27 @@ def menu_inicial():
             case "1":
                 limpar_tela()
                 view_menu_estoque()
+                
             case "2":
                 limpar_tela()
                 view_menu_pedidos()
+                
             case "3":
                 limpar_tela()
                 view_menu_registros()
+                
             case "4":
                 limpar_tela()
                 view_menu_relatorios()
+                
             case "0":
                 limpar_tela()
                 print("   • Até Mais! ")
                 break
+            
             case _:
                 limpar_tela()
                 print("   • Opção Não Válida, Tente Novamente:")
+                
+# Executar Menu Inicial
 menu_inicial()

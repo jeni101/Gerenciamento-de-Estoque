@@ -3,12 +3,7 @@ import os
 
 DATAWAY = "database/dados_produtos.json"
 
-def mensagem_inicial(): # apresentacao do sistema
-    print("Bem-vindo ao gerenciador de estoque, escolha a opção:")
-    print("1 - Cadastrar produtos")
-    opcao = input("> ")
-    if opcao == "1":
-        cadastro_de_produtos()
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 def cadastro_de_produtos(): # todos os dados q foram requisitados 
     categoria = ["Alimenticio", "Higiene", "Casa"] # exemplo de tipo de categorias obs: colocar mais tipos 
@@ -51,6 +46,8 @@ def cadastro_de_produtos(): # todos os dados q foram requisitados
 
     salvar_cadastro(engradado)
 
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 def salvar_cadastro(engradado): # le oq tem nese arquivo 
     # Carrega estoque do JSON
     if os.path.exists(DATAWAY):
@@ -83,9 +80,4 @@ def salvar_cadastro(engradado): # le oq tem nese arquivo
 
     print("Produto salvo com sucesso!")
 
-# Executa
-
-    
-    
-    
-    
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
