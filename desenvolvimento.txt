@@ -1,13 +1,16 @@
+Jenny Poucas Ideias:
+    - implementacao base do programa, sistema de salvamento funcionando.
+    porem ainda tem posibilidade de mudanca no metodo de salvamento.
 
-- implementacao base do programa, sistema de salvamento funcionando.
-porem ainda tem posibilidade de mudanca no metodo de salvamento.
+    obs: 
+    - falta refatorar para usar recursividade e cumprir com a proposta solicitada.
+    - pensar em deixar tudo mais generico para diversos usos personalizados pelo usuario.
 
-obs: 
-- falta refatorar para usar recursividade e cumprir com a proposta solicitada.
-- pensar em deixar tudo mais generico para diversos usos personalizados pelo usuario.
+    - clean code: tudo foi implementado em um arquivo so por hora, tambem sera reorganizado para manter 
+    os padroes de desenvolvimento.
 
-- clean code: tudo foi implementado em um arquivo so por hora, tambem sera reorganizado para manter 
-os padroes de desenvolvimento.
+Luisinho Gameplays:
+    - Estou Fazendo as Views, E estruturando a separação dos arquivos, para futuras terminações.
 
 
 
