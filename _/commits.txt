@@ -10,3 +10,4 @@ Versions:
         -0.0.0.0.0.0.0.0.006.1 (Resolvendo conflitos.)
     -0.000.02
         -0.0.0.0.0.0.0.1.001 (Erro Merge Jeni Resolvido)
+        -0.0.0.0.0.0.0.1.002 (Correção de Sintax e Stach Adicionado)
