@@ -1,0 +1,80 @@
+{
+    "Linha_1": {
+        "Pilha_1": [
+            {
+                "Fabricante": "eu",
+                "Fornecedor": "sf",
+                "Produto": "sf",
+                "Categoria": "Higiene",
+                "Quantidade": "sd",
+                "Peso": "f",
+                "Data_de_Validade": "sfsfs",
+                "Data_de_Fabricacao": "sfsf",
+                "Preco_de_Compra": "fs",
+                "Preco_de_Venda": "sf"
+            },
+            {
+                "Fabricante": "eu",
+                "Fornecedor": "eu tbm",
+                "Produto": "sd",
+                "Categoria": "Casa",
+                "Quantidade": "sfs",
+                "Peso": "sfs",
+                "Data_de_Validade": "fsf",
+                "Data_de_Fabricacao": "sffs",
+                "Preco_de_Compra": "2",
+                "Preco_de_Venda": "2e"
+            },
+            {
+                "Fabricante": "sdasd",
+                "Fornecedor": "aadad",
+                "Produto": "ad",
+                "Categoria": "Higiene",
+                "Quantidade": "ada",
+                "Peso": "dada",
+                "Data_de_Validade": "ada",
+                "Data_de_Fabricacao": "ada",
+                "Preco_de_Compra": "ad",
+                "Preco_de_Venda": "ad"
+            },
+            {
+                "Fabricante": "dsdsd",
+                "Fornecedor": "sdsd",
+                "Produto": "sds",
+                "Categoria": "Higiene",
+                "Quantidade": "dsd",
+                "Peso": "dsd",
+                "Data_de_Validade": "sdssd",
+                "Data_de_Fabricacao": "sdsdsds",
+                "Preco_de_Compra": "erg",
+                "Preco_de_Venda": "werfg"
+            },
+            {
+                "Fabricante": "dcvcdcxv",
+                "Fornecedor": "xvcdxc",
+                "Produto": "dxvcdcxvc",
+                "Categoria": "Alimenticio",
+                "Quantidade": "dcxvcxcxvx",
+                "Peso": "xcvcxdxcvxdxv",
+                "Data_de_Validade": "dcxvdxcv",
+                "Data_de_Fabricacao": "ddsf",
+                "Preco_de_Compra": "",
+                "Preco_de_Venda": ""
+            }
+        ],
+        "Pilha_2": [
+            {
+                "Fabricante": "dfdsdf",
+                "Fornecedor": "dfgfdsdf",
+                "Produto": "dfd",
+                "Categoria": "Higiene",
+                "Quantidade": "ff",
+                "Peso": "dfdf",
+                "Data_de_Validade": "dd",
+                "Data_de_Fabricacao": "dd",
+                "Preco_de_Compra": "wrw",
+                "Preco_de_Venda": "wrwr"
+            }
+        ]
+    }
+}
