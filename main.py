@@ -1,3 +1,3 @@
-from cadastro import *
+from Gestao_Estoque.cadastro import * 
 
-mensagem_incial()
+mensagem_inicial()

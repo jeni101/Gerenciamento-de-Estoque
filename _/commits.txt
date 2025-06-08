@@ -1,0 +1,8 @@
+Versions:
+    -0.000.01
+        -0.0.0.0.0.0.0.0.001 (Programa Base)
+
+
+        -0.0.0.0.0.0.0.0.002 (Implementacao sistema de remocao, incompleto.)
+
+        

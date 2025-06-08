@@ -10,5 +10,10 @@ obs:
 os padroes de desenvolvimento.
 
 
+atualmente as pilhas estao sendo salvas por numeros, mas pode ser personalizado com categorias dai tiraria as categorias dos
+produtos e colocaria na pilha 
+
+tentar deixar o json mais clean, json de entrada e saida e um de produtos
+
 
 
