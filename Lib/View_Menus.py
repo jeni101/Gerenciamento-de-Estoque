@@ -33,7 +33,7 @@ def view_menu_estoque():
             
             case 2:
                 Mascara()
-                # Linkar Função que Remove Itens do Estoque
+                confirmar_remover()
                 break
             
             case 3:

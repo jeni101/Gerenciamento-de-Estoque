@@ -1,23 +1,8 @@
 from Lib.View_Mascara import *
 from Lib.Estoque_Remocao import *
 
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
 global sair 
 sair = False
-
-def mensagem_inicial():  # apresentação do sistema
-    Mascara()
-    print("Bem-vindo ao gerenciador de estoque, escolha a opção:")
-    print("""
-          1 - Cadastrar produtos
-          2 - remover engradado
-          """)
-    opcao = input(" ")
-    if opcao == "1":
-        cadastro_de_produtos()
-    elif opcao == "2":
-        remover_engradado()
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
