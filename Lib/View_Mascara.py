@@ -1,4 +1,4 @@
-from Lib.Limpar_tela import *
+from Lib.Util_Limpar_tela import *
 
 def Mascara():
     limpar_tela()
