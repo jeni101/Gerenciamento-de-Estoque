@@ -3,6 +3,8 @@ import os
 
 DATAWAY = "database/Estoque.json"
 
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 def salvar_cadastro(engradado):  # le o que tem nesse arquivo 
     # Carrega estoque do JSON
     if os.path.exists(DATAWAY):
@@ -58,6 +60,8 @@ def salvar_cadastro(engradado):  # le o que tem nesse arquivo
 
     print("Produto salvo com sucesso!")
     
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+    
 def ler_arquivo(engradado):
      # le o que tem nesse arquivo 
     # Carrega estoque do JSON
@@ -70,6 +74,4 @@ def ler_arquivo(engradado):
     else:
         estoque = {}
 
-
-
-    
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

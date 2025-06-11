@@ -1,27 +1,15 @@
-from Limpar_tela import *
-from salvar import *
-from remover_engradado import * 
+from Lib.View_Mascara import *
+from Lib.Estoque_Remocao import *
 
 global sair 
 sair = False
 
-def mensagem_inicial():  # apresentação do sistema
-    limpar_tela()
-    print("Bem-vindo ao gerenciador de estoque, escolha a opção:")
-    print("""
-          1 - Cadastrar produtos
-          2 - remover engradado
-          """)
-    opcao = input(" ")
-    if opcao == "1":
-        cadastro_de_produtos()
-    elif opcao == "2":
-        remover_engradado()
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 def cadastro_de_produtos():# todos os dados que foram requisitados
         
     while sair == False:
-        limpar_tela()
+        Mascara()
         
         
         categoria = ["Alimenticio", "Higiene", "Casa"]  # exemplo de tipos de categorias
@@ -65,10 +53,10 @@ def cadastro_de_produtos():# todos os dados que foram requisitados
         }
 
         salvar_cadastro(engradado)
-        limpar_tela()
+        Mascara()
         confirmacao()
 
-
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     
 def confirmacao():
     global sair
@@ -83,10 +71,4 @@ def confirmacao():
             print("comando invalido, tente novamente.")
             continue
 
-# Executa a função principal
-mensagem_inicial()
-
-    
-    
-    
-    
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
