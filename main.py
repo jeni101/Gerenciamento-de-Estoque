@@ -1,7 +1,7 @@
 
 from Lib.View_Menus import *
 from Lib.View_Mascara import *
-from Lib.teste_salvar_codigoB import *
+from Lib.Presenter_Salvar_CodigoBaras import *
 
 buscar_info_produto()
 # def menu_inicial():
