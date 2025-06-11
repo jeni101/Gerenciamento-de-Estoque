@@ -42,21 +42,21 @@ def remover_engradado(estrutura, nome_produto, caminho=""):
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-import json
+# import json
 
-# Carregue o estoque
-with open("database/Estoque.json", "r", encoding="utf-8") as f:
-    estoque = json.load(f)
+# # Carregue o estoque
+# with open("database/Estoque.json", "r", encoding="utf-8") as f:
+#     estoque = json.load(f)
 
-# Pergunte só uma vez
+# # Pergunte só uma vez
 
-nome = input("Digite o nome do produto para remoção: ")
-# Tente remover
-resultado = remover_engradado(estoque, nome)
+# nome = input("Digite o nome do produto para remoção: ")
+# # Tente remover
+# resultado = remover_engradado(estoque, nome)
 
-# Salve se algo foi removido
-if resultado and resultado.get("Removido"):
-    with open("database/Estoque.json", "w", encoding="utf-8") as f:
-        json.dump(estoque, f, ensure_ascii=False, indent=4)
+# # Salve se algo foi removido
+# if resultado and resultado.get("Removido"):
+#     with open("database/Estoque.json", "w", encoding="utf-8") as f:
+#         json.dump(estoque, f, ensure_ascii=False, indent=4)
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

@@ -1,4 +1,4 @@
-from Lib.Limpar_tela import *
+from Lib.Util_Limpar_tela import *
 from Lib.Estoque_Cadastro import *
 from Lib.View_Mascara import *
 
@@ -33,7 +33,7 @@ def view_menu_estoque():
             
             case 2:
                 Mascara()
-                # Linkar Função que Remove Itens do Estoque
+                confirmar_remover()
                 break
             
             case 3:
