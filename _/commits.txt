@@ -15,5 +15,6 @@ Versions:
         -0.0.0.0.0.0.0.1.004 (README Adicionado)
         -0.0.0.0.0.0.0.1.004.1 (Correção de Sintax)
         -0.0.0.0.0.0.0.1.004.2 (Resolvendo conflitos)
+        -0.0.0.0.0.0.0.1.005 (Implementacao sistema de cadastro otimizado, em teste)
 
 

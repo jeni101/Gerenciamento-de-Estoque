@@ -44,3 +44,7 @@ Luisinho Gameplays:
 
     - Implementação da Mascara em todo o Projeto
 
+Jeni:
+    - implementacao cadastro otimizado e editavel 
+    - reestruturar cadastro patrao 
+    - revisar variaveis do novo cadastro
