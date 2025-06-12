@@ -67,8 +67,7 @@ def salvar_cadastro(engradado):  # le o que tem nesse arquivo
     
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     
-def ler_arquivo(engradado):
-     # le o que tem nesse arquivo 
+def ler_arquivo():
     # Carrega estoque do JSON
     if os.path.exists(DATAWAY):
         with open(DATAWAY, 'r', encoding='utf-8') as f:
@@ -78,6 +77,7 @@ def ler_arquivo(engradado):
                 estoque = {}
     else:
         estoque = {}
+    return estoque # <- lembre de retornar!
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
