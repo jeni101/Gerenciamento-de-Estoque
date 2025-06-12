@@ -51,8 +51,10 @@ Jeni:
 
 
 A fazer: 
-- listar produtos (id ou nome) - feito por nome 
+- listar produtos (id ou nome) - feito por nome
 - atualizar json p saida
 - pedidos
 - relatorios 
 - produtos perto da data de validade
+
+- id implementado 

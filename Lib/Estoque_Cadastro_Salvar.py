@@ -1,7 +1,9 @@
 import json
 import os
+import os.path
 
 DATAWAY = "database/Estoque.json"
+DATAWAY_ID = "database/id.json"
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -15,7 +17,10 @@ def salvar_cadastro(engradado):  # le o que tem nesse arquivo
                 estoque = {}
     else:
         estoque = {}
-
+        
+    Numero_ID = atualizar_ID()
+    engradado["ID"] = Numero_ID
+    
     produto_adicionado = False
 
     # Tenta adicionar o produto nas pilhas das 8 linhas
@@ -75,3 +80,22 @@ def ler_arquivo(engradado):
         estoque = {}
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+def ler_ID():
+    if os.path.exists(DATAWAY_ID):
+        with open(DATAWAY_ID, 'r', encoding='utf-8') as f:
+            try:
+                Numero_ID = json.load(f)
+            except json.JSONDecodeError:
+                Numero_ID = 0  # Se o arquivo estiver vazio ou corrompido, começa do 0
+    else:
+        Numero_ID = 0  # Se o arquivo não existir, começa com o ID 0
+    return Numero_ID
+
+# Função para atualizar o ID
+def atualizar_ID():
+    Numero_ID = ler_ID()  # Lê o ID atual
+    Numero_ID += 1  # Incrementa o ID
+    with open(DATAWAY_ID, 'w', encoding='utf-8') as f:
+        json.dump(Numero_ID, f, ensure_ascii=False, indent=4)  # Salva o novo ID
+    return Numero_ID

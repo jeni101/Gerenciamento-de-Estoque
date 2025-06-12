@@ -1,5 +1,6 @@
 import requests
 from Lib.View_Mascara import *
+from Lib.Estoque_Cadastro_Salvar import *
 
 
 sair = False  # não precisa de global aqui se for bem usado nas funções
@@ -187,6 +188,10 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
             print(f"{chave}: {valor}")
 
         # chamar metodo de salvar 
+        escolha = input("deseja salvar essa versao? (s/n)").lower()
+        if escolha == "s":
+            salvar_cadastro(engradado)
+        
         
         decisao = input("\nPara sair digite '0' + Enter, e para continuar aperte qualquer tecla: ")
         if decisao == "0":
