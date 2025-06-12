@@ -25,6 +25,5 @@
 
 
 ## Criadores e Colaboradores
-- Gustavo Vieira
 - Jenifer Gomes
 - Luís Gabriel
