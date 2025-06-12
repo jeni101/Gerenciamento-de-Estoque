@@ -100,6 +100,92 @@
                 "Preco_de_Venda": "34.00",
                 "Preco_de_Compra": "23.44",
                 "ID": 2
+            },
+            {
+                "Fabricante": "luis",
+                "Fornecedor": "gay",
+                "Produto": "Farandole de madeleine",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Peso": "Boîte en carton, Film en plastique",
+                "Data_de_Validade": "02/02/2000",
+                "Data_de_Fabricacao": "20/06/2000",
+                "Preco_de_Venda": "2 real",
+                "Preco_de_Compra": "4 real",
+                "peso": 450,
+                "ID": 3
+            },
+            {
+                "Fabricante": "luis",
+                "Fornecedor": "teu pai",
+                "Produto": "Farandole de madeleine",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Peso": "Boîte en carton, Film en plastique",
+                "Data_de_Validade": "03/30/30303",
+                "Data_de_Fabricacao": "24/24/2424",
+                "Preco_de_Venda": "22",
+                "Preco_de_Compra": "44",
+                "peso": 100,
+                "ID": 4
+            }
+        ],
+        "Pilha_3": [
+            {
+                "Fabricante": "luis",
+                "Fornecedor": "teu pai",
+                "Produto": "Farandole de madeleine",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Peso": "Boîte en carton, Film en plastique",
+                "Data_de_Validade": "03/30/30303",
+                "Data_de_Fabricacao": "24/24/2424",
+                "Preco_de_Venda": "22",
+                "Preco_de_Compra": "44",
+                "peso": 100,
+                "ID": 5
+            },
+            {
+                "Fabricante": "luis",
+                "Fornecedor": "teu pai",
+                "Produto": "Farandole de madeleine",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Peso": "Boîte en carton, Film en plastique",
+                "Data_de_Validade": "03/30/30303",
+                "Data_de_Fabricacao": "24/24/2424",
+                "Preco_de_Venda": "22",
+                "Preco_de_Compra": "44",
+                "peso": 100,
+                "ID": 6
+            },
+            {
+                "Fabricante": "luis",
+                "Fornecedor": "teu pai",
+                "Produto": "Farandole de madeleine",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Peso": "Boîte en carton, Film en plastique",
+                "Data_de_Validade": "03/30/30303",
+                "Data_de_Fabricacao": "24/24/2424",
+                "Preco_de_Venda": "22",
+                "Preco_de_Compra": "44",
+                "peso": 100,
+                "ID": 7
+            },
+            {
+                "Fabricante": "luis",
+                "Fornecedor": "teu pai",
+                "Produto": "Farandole de madeleine",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Peso": "Boîte en carton, Film en plastique",
+                "Data_de_Validade": "03/30/30303",
+                "Data_de_Fabricacao": "24/24/2424",
+                "Preco_de_Venda": "22",
+                "Preco_de_Compra": "44",
+                "peso": 50,
+                "ID": 8
             }
         ]
     }

@@ -58,3 +58,5 @@ A fazer:
 - produtos perto da data de validade
 
 - id implementado 
+- engradados tem peso limite
+- esses esgrados podem gerar um lote, implementacao futura 

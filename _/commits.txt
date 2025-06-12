@@ -22,6 +22,7 @@ Versions:
         -0.0.0.0.0.0.0.2.003 (Implementacao das funcoes do presenter de Listagem de produtos)
         -0.0.0.0.0.0.0.2.004 (Implementacao ID)
         -0.0.0.0.0.0.0.2.004.1 (Resolvendo conflitos)
+        -0.0.0.0.0.0.0.2.005 (implecao peso limite para engradados)
 
 
 
