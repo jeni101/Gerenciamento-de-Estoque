@@ -1,11 +1,16 @@
 from Lib.Util_Limpar_tela import *
 from Lib.Estoque_Cadastro import *
 from Lib.View_Mascara import *
+from Lib.Presenter_Listar_Produto import *
+from Lib.Presenter_Salvar_CodigoBaras import *
+from Lib.pedidos import *
+from Lib.Listar_pedidos import *
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 def view_menu_estoque():
     while True:
+        Mascara()
         print("""
    • O que Desejas Verificar?
  |==================================================|
@@ -28,7 +33,7 @@ def view_menu_estoque():
         match escolha:
             case 1:
                 Mascara()
-                cadastro_de_produtos()
+                buscar_info_produto()
                 break
             
             case 2:
@@ -38,7 +43,7 @@ def view_menu_estoque():
             
             case 3:
                 Mascara()
-                # Linkar Função que Visualiza o Estoque
+                buscar_produto_por_nome()
                 break
             
             case 0:
@@ -70,12 +75,13 @@ def view_menu_pedidos():
         match escolha:
             case 1:
                 Mascara()
-                # Linkar Função de Registrar Novo Pedido
+                fazer_pedido()
+                
                 break
             
             case 2:
                 Mascara()
-                # Linkar Função que Visualiza Pedidos Ativos
+                listar_pedidos()
                 break
             
             case 0:
@@ -84,86 +90,86 @@ def view_menu_pedidos():
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-def view_menu_registros():
-    while True:
-        print("""
-   • Aqui Está Tudo Bem Registrado!
- |==================================================|
- | -=-                REGISTROS                 -=- |
- |==================================================|
- |- Realizar Novo Registro  . . . . . . . . . |  1  |
- |- Visualizar Histórico de Registros . . . . |  1  |
- |- Limpar Registros Antigos  . . . . . . . . |  3  |
- |____________________________________________|_____|
- |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
- |==================================================| 
-""")
-        try:
-            escolha = int(input("   • Digite Sua Escolha: "))
-        except ValueError:
-            Mascara()
-            print("   • Opção Não Válida, Tente Novamente: ")
-            continue
+# def view_menu_registros():
+#     while True:
+#         print("""
+#    • Aqui Está Tudo Bem Registrado!
+#  |==================================================|
+#  | -=-                REGISTROS                 -=- |
+#  |==================================================|
+#  |- Realizar Novo Registro  . . . . . . . . . |  1  |
+#  |- Visualizar Histórico de Registros . . . . |  1  |
+#  |- Limpar Registros Antigos  . . . . . . . . |  3  |
+#  |____________________________________________|_____|
+#  |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
+#  |==================================================| 
+# """)
+#         try:
+#             escolha = int(input("   • Digite Sua Escolha: "))
+#         except ValueError:
+#             Mascara()
+#             print("   • Opção Não Válida, Tente Novamente: ")
+#             continue
 
-        match escolha:
-            case 1:
-                Mascara()
-                # Linkar Função que Visualiza Histórico
-                break
+#         match escolha:
+#             case 1:
+#                 Mascara()
+#                 # Linkar Função que Visualiza Histórico
+#                 break
             
-            case 2:
-                Mascara()
-                # Linkar Função que Limpa Registros
-                break
+#             case 2:
+#                 Mascara()
+#                 # Linkar Função que Limpa Registros
+#                 break
             
-            case 3:
-                Mascara()
-                # Linkar Função que Limpa Registros Antigos
-                break
+#             case 3:
+#                 Mascara()
+#                 # Linkar Função que Limpa Registros Antigos
+#                 break
             
-            case 0:
-                Mascara()
-                return
+#             case 0:
+#                 Mascara()
+#                 return
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-def view_menu_relatorios():
-    while True:
-        print("""
-   • Vamos Ver Como Está Rolando as Coisas?
- |==================================================|
- | -=-               RELATORIOS                 -=- |
- |==================================================|
- |- Gerar Novo Relatório  . . . . . . . . . . |  1  |
- |- Visualizar Último Relatório . . . . . . . |  2  |
- |- Limpar Relatórios Antigos . . . . . . . . |  3  |
- |____________________________________________|_____|
- |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
- |==================================================| 
-""")
-        try:
-            escolha = int(input("   • Digite Sua Escolha: "))
-        except ValueError:
-            Mascara()
-            print("   • Opção Não Válida, Tente Novamente: ")
-            continue
+# def view_menu_relatorios():
+#     while True:
+#         print("""
+#    • Vamos Ver Como Está Rolando as Coisas?
+#  |==================================================|
+#  | -=-               RELATORIOS                 -=- |
+#  |==================================================|
+#  |- Gerar Novo Relatório  . . . . . . . . . . |  1  |
+#  |- Visualizar Último Relatório . . . . . . . |  2  |
+#  |- Limpar Relatórios Antigos . . . . . . . . |  3  |
+#  |____________________________________________|_____|
+#  |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
+#  |==================================================| 
+# """)
+#         try:
+#             escolha = int(input("   • Digite Sua Escolha: "))
+#         except ValueError:
+#             Mascara()
+#             print("   • Opção Não Válida, Tente Novamente: ")
+#             continue
 
-        match escolha:
-            case 1:
-                Mascara()
-                # Linkar Função que Gera Novo Relatório
-                break
+#         match escolha:
+#             case 1:
+#                 Mascara()
+#                 # Linkar Função que Gera Novo Relatório
+#                 break
             
-            case 2:
-                Mascara()
-                # Linkar Função que Visualiza Último Relatório
-                break
+#             case 2:
+#                 Mascara()
+#                 # Linkar Função que Visualiza Último Relatório
+#                 break
             
-            case 3:
-                Mascara()
-                # Linkar Função que Limpa Relatórios Antigos
-                break
+#             case 3:
+#                 Mascara()
+#                 # Linkar Função que Limpa Relatórios Antigos
+#                 break
             
-            case 0:
-                Mascara()
-                return
+#             case 0:
+#                 Mascara()
+#                 return
