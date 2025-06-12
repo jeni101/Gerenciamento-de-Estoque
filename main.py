@@ -2,9 +2,9 @@
 from Lib.View_Menus import *
 from Lib.View_Mascara import *
 from Lib.Presenter_Salvar_CodigoBaras import *
-from Lib.Listar_Produto import *
-#buscar_produto_por_nome()
-buscar_info_produto()
+from Lib.Presenter_Listar_Produto import *
+buscar_produto_por_nome()
+#buscar_info_produto()
 # def menu_inicial():
 #     Mascara()    
 #     while True:
