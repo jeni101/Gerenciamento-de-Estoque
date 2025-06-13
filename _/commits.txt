@@ -30,6 +30,7 @@ Versions:
         -0.0.0.0.0.0.0.3.001 (Correções Finais)
         -0.0.0.0.0.0.0.3.002 (limpar pedidos)
         -0.0.0.0.0.0.0.3.003 (Final)
+        -0.0.0.0.0.0.0.3.004 (Executável Adicionado)
         
 
 
