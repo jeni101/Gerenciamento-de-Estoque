@@ -18,5 +18,20 @@ Versions:
         -0.0.0.0.0.0.0.1.005 (Implementacao sistema de cadastro otimizado, em teste)
     -0.000.03
         -0.0.0.0.0.0.0.2.001 (Implementacao Presenter de Tempo Real de Busca)
+        -0.0.0.0.0.0.0.2.002 (Implementacao busca/ listagem de produto.)
+        -0.0.0.0.0.0.0.2.003 (Implementacao das funcoes do presenter de Listagem de produtos)
+        -0.0.0.0.0.0.0.2.004 (Implementacao ID)
+        -0.0.0.0.0.0.0.2.004.1 (Resolvendo conflitos)
+        -0.0.0.0.0.0.0.2.005 (implecao peso limite para engradados)
+        -0.0.0.0.0.0.0.2.006 (Implementacao pedidos)
+        -0.0.0.0.0.0.0.2.007 (Listagem e ajustes)
+        -0.0.0.0.0.0.0.2.007.1 (ajustes)
+    -0.000.04
+        -0.0.0.0.0.0.0.3.001 (Correções Finais)
+        -0.0.0.0.0.0.0.3.002 (limpar pedidos)
+        -0.0.0.0.0.0.0.3.003 (Final)
+        -0.0.0.0.0.0.0.3.004 (Executável Adicionado)
+        
+
 
 

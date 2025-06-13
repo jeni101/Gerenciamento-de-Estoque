@@ -48,3 +48,15 @@ Jeni:
     - implementacao cadastro otimizado e editavel 
     - reestruturar cadastro patrao 
     - revisar variaveis do novo cadastro
+
+
+A fazer: 
+- listar produtos (id ou nome) - feito por nome
+- atualizar json p saida - feito 
+- pedidos - feito 
+- relatorios 
+- produtos perto da data de validade
+
+- id implementado 
+- engradados tem peso limite
+- esses esgrados podem gerar um lote, implementacao futura 

@@ -1,5 +1,6 @@
 import requests
 from Lib.View_Mascara import *
+from Lib.Estoque_Cadastro_Salvar import *
 
 
 sair = False  # não precisa de global aqui se for bem usado nas funções
@@ -48,6 +49,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante:                         |- Fornecedor:                          |
  |______________________________________|______________________________________ |
+ |============================================================================= | 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |============================================================================= | 
  """)
@@ -67,6 +69,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante: {temp_fabricante:<24}|- Fornecedor:                          |
  |______________________________________|______________________________________ |
+ |============================================================================= | 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |============================================================================= | 
  """)
@@ -86,6 +89,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante: {temp_fabricante:<24}|- Fornecedor: {temp_fornecedor:<25}|
  |______________________________________|______________________________________ |
+ |============================================================================= | 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |============================================================================= | 
  """)
@@ -105,6 +109,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante: {temp_fabricante:<24}|- Fornecedor: {temp_fornecedor:<25}|
  |______________________________________|_______________________________________|
+ |==============================================================================| 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |==============================================================================| 
  """)
@@ -124,6 +129,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante: {temp_fabricante:<24}|- Fornecedor: {temp_fornecedor:<25}|
  |______________________________________|_______________________________________|
+ |==============================================================================| 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |==============================================================================| 
  """)
@@ -143,6 +149,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante: {temp_fabricante:<24}|- Fornecedor: {temp_fornecedor:<25}|
  |______________________________________|_______________________________________|
+ |==============================================================================| 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |==============================================================================| 
  """)
@@ -162,6 +169,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
  |______________________________________________________________________________|
  |- Fabricante: {temp_fabricante:<24}|- Fornecedor: {temp_fornecedor:<25}|
  |______________________________________|_______________________________________|
+ |==============================================================================| 
  |- Voltar  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . |   0   |
  |==============================================================================| 
  """)
@@ -180,16 +188,21 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
             "Preco_de_Compra" : temp_precocompra 
         }
 
-        editavel_produtos(engradado)
-
-        print("\n--- DADOS FINAIS DO PRODUTO ---")
-        for chave, valor in engradado.items():
-            print(f"{chave}: {valor}")
+        engradados_final = editavel_produtos([engradado])
 
         # chamar metodo de salvar 
+        escolha = input("deseja salvar essa versao? (s/n)").lower()
+        if escolha == "s":
+            for e in engradados_final:
+                salvar_cadastro(e)
+            print("Engradados(s) salvos(s) com sucesso.")
+        else:
+            print("cadastro descartado.")
         
-        decisao = input("\nPara sair digite '0' + Enter, e para continuar aperte qualquer tecla: ")
+        
+        decisao = input("   • Para sair digite '0' + Enter, e para continuar aperte qualquer tecla: ")
         if decisao == "0":
+            Mascara()
             break
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -217,10 +230,12 @@ def mensagem_de_Aviso(): # a API n é 100%
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-def editavel_produtos(engradado): # edicao das variaveis
-    resposta = input("\nDeseja alterar algum valor antes de salvar? (s/n): ").lower()
+def editavel_produtos(lista_engradados): # edicao das variaveis
+ 
+    resposta = input("Deseja alterar algum valor antes de salvar? (s/n): ").lower()
 
     if resposta == "s":
+        base = lista_engradados[0]  # <- Garantir acesso ao engradado base já no início
         print("""
    • Escolha o Campo que Deseja Alterar:
  |=================================================================|
@@ -237,32 +252,79 @@ def editavel_produtos(engradado): # edicao das variaveis
  |=================================================================| 
 """)
         escolha = input("   • Digite sua Escolha:")
+        
+        # Sempre edita o primeiro engradado da lista (o base)
+        base = lista_engradados[0]
 
         if escolha == "1":
-            engradado["Fabricante"] = input("Novo fabricante: ")
+            base["Fabricante"] = input("   • Novo fabricante: ")
         elif escolha == "2":
-            engradado["Fornecedor"] = input("Novo fornecedor: ")
+            base["Fornecedor"] = input("   • Novo fornecedor: ")
         elif escolha == "3":
-            engradado["Produto"] = input("Novo nome do produto: ")
+            base["Produto"] = input("   • Novo nome do produto: ")
         elif escolha == "4":
-            engradado["Categoria"] = input("Nova categoria: ")
+            base["Categoria"] = input("   • Nova categoria: ")
         elif escolha == "5":
-            engradado["Quantidade"] = input("Nova quantidade: ")
+            base["Quantidade"] = input("   • Nova quantidade: ")
         elif escolha == "6":
-            engradado["Peso"] = input("Novo peso: ")
+            base["Nome"] = input("   • Novo Nome: ")
         elif escolha == "7":
-            engradado["Data_de_Validade"] = input("Nova data de validade (dd/mm/aaaa): ")
+            peso_total = int(input("   • Novo peso em kg: "))
+            lista_engradados = gerar_engradados_por_peso(base, peso_total) # chama funcao p separar os engradados
+            print(f"\nForam gerados {len(lista_engradados)} engradado(s):") # print enumerado do q foi criado com o peso
+            for i, j in enumerate(lista_engradados, 1):
+                print(f" - Engradado {i}: {j['peso']} kg")
         elif escolha == "8":
-            engradado["Data_de_Fabricacao"] = input("Nova data de fabricação (dd/mm/aaaa): ")
+            base["Data_de_Validade"] = input("   • Nova data de validade (dd/mm/aaaa): ")
         elif escolha == "9":
-            engradado["Preco_de_Compra"] = input("Novo preço de compra: ")
+            base["Data_de_Fabricacao"] = input("   • Nova data de fabricação (dd/mm/aaaa): ")
         elif escolha == "10":
-            engradado["Preco_de_Venda"] = input("Novo preço de venda: ")
+            base["Preco_de_Compra"] = input("   • Novo preço de compra: ")
+        elif escolha == "11":
+            base["Preco_de_Venda"] = input("   • Novo preço de venda: ")
         elif escolha == "0":
-            print("Alterações finalizadas.")
-            return
+            print("   • Alterações finalizadas!")
+            return lista_engradados
         else:
             print("   • Opção inválida, Tente Novamente.")
 
-        editavel_produtos(engradado)  # recursão
+        decisao = input("   • Para sair digite '0' + Enter, e para continuar aperte qualquer tecla: ")
+        if decisao == "0":
+            return lista_engradados
+        return editavel_produtos(lista_engradados)  # recursão com o primeiro engradado atualizado
 
+    elif resposta == "n":
+        return lista_engradados
+    
+    # elif resposta.lower() == "n":
+    #     escolha = input("Deseja salvar essa versão? (s/n): ").lower()
+    #     if escolha == "s":
+    #         for e in lista_engradados:
+    #             salvar_cadastro(e)
+    #         print("Engradados salvos com sucesso!")
+    #     else:
+    #         print("Engradados não salvos.")
+        
+
+
+
+
+def gerar_engradados_por_peso(engradado_base, peso_total): #peso limite limite 100kg 
+    engradados = []
+    
+    quantidade_engradados_cheios = peso_total//100
+    
+    peso_restante = peso_total % 100
+    
+    for i in range(quantidade_engradados_cheios):
+        novo_engradado = engradado_base.copy()
+        novo_engradado["peso"] = 100
+        engradados.append(novo_engradado)
+    
+    if peso_restante > 0:
+        restante = engradado_base.copy()
+        restante["peso"] = peso_restante
+        engradados.append(restante)
+    
+    return engradados 
+        
