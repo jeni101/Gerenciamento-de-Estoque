@@ -202,6 +202,7 @@ def buscar_info_produto(): # API para buscar um produto pelo codigo de barras
         
         decisao = input("   • Para sair digite '0' + Enter, e para continuar aperte qualquer tecla: ")
         if decisao == "0":
+            Mascara()
             break
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-

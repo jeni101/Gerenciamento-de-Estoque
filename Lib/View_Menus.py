@@ -90,6 +90,49 @@ def view_menu_pedidos():
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+def view_menu_relatorios():
+    while True:
+        print("""
+   • Vamos Ver Como Está Rolando as Coisas?
+ |==================================================|
+ | -=-               RELATORIOS                 -=- |
+ |==================================================|
+ |- Gerar Novo Relatório de Pedidos . . . . . |  1  |
+ |- Visualizar Relatorios . . . . . . . . . . |  2  |
+ |- Limpar Relatórios Antigos . . . . . . . . |  3  |
+ |____________________________________________|_____|
+ |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
+ |==================================================| 
+""")
+        try:
+            escolha = int(input("   • Digite Sua Escolha: "))
+        except ValueError:
+            Mascara()
+            print("   • Opção Não Válida, Tente Novamente: ")
+            continue
+
+        match escolha:
+            case 1:
+                Mascara()
+                listar_pedidos()
+                break
+            
+            case 2:
+                Mascara()
+                # Linkar Função que Visualiza Relatorios
+                break
+            
+            case 3:
+                Mascara()
+                # Linkar Função que Limpa Relatórios Antigos
+                break
+            
+            case 0:
+                Mascara()
+                return
+
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 # def view_menu_registros():
 #     while True:
 #         print("""
@@ -125,49 +168,6 @@ def view_menu_pedidos():
 #             case 3:
 #                 Mascara()
 #                 # Linkar Função que Limpa Registros Antigos
-#                 break
-            
-#             case 0:
-#                 Mascara()
-#                 return
-
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
-# def view_menu_relatorios():
-#     while True:
-#         print("""
-#    • Vamos Ver Como Está Rolando as Coisas?
-#  |==================================================|
-#  | -=-               RELATORIOS                 -=- |
-#  |==================================================|
-#  |- Gerar Novo Relatório  . . . . . . . . . . |  1  |
-#  |- Visualizar Último Relatório . . . . . . . |  2  |
-#  |- Limpar Relatórios Antigos . . . . . . . . |  3  |
-#  |____________________________________________|_____|
-#  |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
-#  |==================================================| 
-# """)
-#         try:
-#             escolha = int(input("   • Digite Sua Escolha: "))
-#         except ValueError:
-#             Mascara()
-#             print("   • Opção Não Válida, Tente Novamente: ")
-#             continue
-
-#         match escolha:
-#             case 1:
-#                 Mascara()
-#                 # Linkar Função que Gera Novo Relatório
-#                 break
-            
-#             case 2:
-#                 Mascara()
-#                 # Linkar Função que Visualiza Último Relatório
-#                 break
-            
-#             case 3:
-#                 Mascara()
-#                 # Linkar Função que Limpa Relatórios Antigos
 #                 break
             
 #             case 0:

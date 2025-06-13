@@ -1,0 +1,12 @@
+[
+    {
+        "Nome": "Jenifer",
+        "Produtos": [
+            {
+                "Produto": "Farandole de madeleine",
+                "Quantidade kg": 50.0
+            }
+        ],
+        "Data do Pedido": "05/05/2025"
+    }
+]
