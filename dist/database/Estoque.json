@@ -1,0 +1,32 @@
+{
+    "Linha_1": {
+        "Pilha_1": [
+            {
+                "Fabricante": "rogerio",
+                "Fornecedor": "cleiton",
+                "Produto": "Shampoo",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Data_de_Validade": "20/04/2026",
+                "Data_de_Fabricacao": "20/03/2023",
+                "Preco_de_Venda": "34.00",
+                "Preco_de_Compra": "25.00",
+                "peso": 50.0,
+                "ID": 1
+            },
+            {
+                "Fabricante": "fernando",
+                "Fornecedor": "joao",
+                "Produto": "Shampoo",
+                "Categoria": "Snacks",
+                "Quantidade": "590 g",
+                "Data_de_Validade": "20/07/2003",
+                "Data_de_Fabricacao": "20/08/2027",
+                "Preco_de_Venda": "20.00",
+                "Preco_de_Compra": "9.00",
+                "peso": 95,
+                "ID": 2
+            }
+        ]
+    }
+}
