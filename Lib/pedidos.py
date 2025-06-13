@@ -25,7 +25,7 @@ def fazer_pedido():
 
     estoque = ler_arquivo()  # supondo que retorna dict
 
-    for nome_produto, quantidade in lista_de_produtos:
+    for nome_produto, quantidade in lista_de_produtos: # procura o primeiro item com esse nome FIFO
         engradado_encontrado = False
 
         for linha in estoque.values():
