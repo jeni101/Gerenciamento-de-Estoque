@@ -8,5 +8,15 @@
             }
         ],
         "Data do Pedido": "05/05/2025"
+    },
+    {
+        "Nome": "Jenifer",
+        "Produtos": [
+            {
+                "Produto": "Shampoo",
+                "Quantidade kg": 50.0
+            }
+        ],
+        "Data do Pedido": "12/06/2025"
     }
 ]
