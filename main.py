@@ -1,9 +1,8 @@
-
 from Lib.View_Menus import *
 from Lib.View_Mascara import *
 from Lib.Presenter_Salvar_CodigoBaras import *
 from Lib.Presenter_Listar_Produto import *
-from Lib.pedidos import *
+from Lib.Pedidos_Chamados import *
 
 
 
@@ -35,7 +34,7 @@ def menu_inicial():
                 
             case "3":
                 Mascara()
-                # view_menu_relatorios()
+                view_menu_relatorios()
                 
             case "0":
                 Mascara()

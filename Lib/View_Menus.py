@@ -3,8 +3,9 @@ from Lib.Estoque_Cadastro import *
 from Lib.View_Mascara import *
 from Lib.Presenter_Listar_Produto import *
 from Lib.Presenter_Salvar_CodigoBaras import *
-from Lib.pedidos import *
-from Lib.Listar_pedidos import *
+from Lib.Pedidos_Chamados import *
+from Lib.Pedidos_Listar import *
+from Lib.Pedidos_Limpar import *
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -97,9 +98,8 @@ def view_menu_relatorios():
  |==================================================|
  | -=-               RELATORIOS                 -=- |
  |==================================================|
- |- Gerar Novo Relatório de Pedidos . . . . . |  1  |
- |- Visualizar Relatorios . . . . . . . . . . |  2  |
- |- Limpar Relatórios Antigos . . . . . . . . |  3  |
+ |- Visualizar Relatorios . . . . . . . . . . |  1  |
+ |- Limpar Relatórios Antigos . . . . . . . . |  2  |
  |____________________________________________|_____|
  |- Voltar  . . . . . . . . . . . . . . . . . |  0  |
  |==================================================| 
@@ -119,12 +119,7 @@ def view_menu_relatorios():
             
             case 2:
                 Mascara()
-                # Linkar Função que Visualiza Relatorios
-                break
-            
-            case 3:
-                Mascara()
-                # Linkar Função que Limpa Relatórios Antigos
+                limpar_historico()
                 break
             
             case 0:
