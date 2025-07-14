@@ -60,3 +60,6 @@ A fazer:
 - id implementado 
 - engradados tem peso limite
 - esses esgrados podem gerar um lote, implementacao futura 
+
+Jeni: 
+    - implementacao do esqueleto de personalisacao do molde do estoque 

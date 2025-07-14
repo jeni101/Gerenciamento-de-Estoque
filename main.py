@@ -3,6 +3,8 @@ from Lib.View_Mascara import *
 from Lib.Presenter_Salvar_CodigoBaras import *
 from Lib.Presenter_Listar_Produto import *
 from Lib.Pedidos_Chamados import *
+from Lib.molde_do_estoque import *
+
 
 
 
@@ -46,5 +48,6 @@ def menu_inicial():
                 print("   • Opção Não Válida, Tente Novamente:")
                 
 # Executar Menu Inicial
-menu_inicial()
+#menu_inicial()
+escolha_do_estoque()
 
