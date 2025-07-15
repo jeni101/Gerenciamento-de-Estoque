@@ -62,4 +62,13 @@ A fazer:
 - esses esgrados podem gerar um lote, implementacao futura 
 
 Jeni: 
+    feito:
     - implementacao do esqueleto de personalisacao do molde do estoque 
+
+Jeni:
+    feito:
+    - implementacao visual base dos espacos no modo personalizado 
+    
+    a fazer:
+    - implementar o visual de engradados dentro de cada espaco e tornalo personalizado tambem 
+    - mexer na parte visual e deixar mais clean 

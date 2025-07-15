@@ -32,6 +32,7 @@ Versions:
         -0.0.0.0.0.0.0.3.003 (Final)
         -0.0.0.0.0.0.0.3.004 (Executável Adicionado)
         -0.0.0.0.0.0.0.3.005 (inicio de personalizacao)
+        -0.0.0.0.0.0.0.3.006 (implementacao visual base do molde personalizado)
         
 
 

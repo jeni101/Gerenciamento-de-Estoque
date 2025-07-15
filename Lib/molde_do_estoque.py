@@ -60,14 +60,37 @@ def mensagem_iformativa():
     print("Para um cadastro mais preciso informe a quantidade de espaco disponiveis no seu estoque de\n")
     
 def resultado():
+    # funcao p calcular o resultado final de engradados por espaco 
     linhas = Linhas()
     colunas = Colunas()
     resultado = linhas * colunas
     posicoes = resultado * 5
     print(f"Você selecionou o molde de {linhas} linhas por {colunas} colunas, totalizando {resultado} espaços e {posicoes} posições disponíveis de engradados para este molde")
     salva = input("deseja continuar com essa estrutura? (s/n)")
+    representacao(linhas, colunas)
     
     
-def representacao():
-    # print repesentativo dos espacos
-    pass
+def representacao(linhas, colunas ):
+    print("esta é a representacao visual do modelo que voce escolheu, confere?")
+
+    
+    contador = 1
+
+    for linha in range(linhas):
+        # Linha superior da grade
+        print("+-----------" * colunas + "+")
+
+        # Conteúdo das células
+        linha_celula = ""
+        for coluna in range(colunas):
+            linha_celula += f"| Esp. {contador:<3}  "
+            contador += 1
+        print(linha_celula + "|")
+
+    # Linha inferior da última fileira
+    print("+-----------" * colunas + "+")
+    input()
+
+            
+        
+        
